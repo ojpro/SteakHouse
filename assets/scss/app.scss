@@ -1,0 +1,21 @@
+  // Importing Helpers
+  @import 'helpers/colors';
+  @import 'helpers/variables';
+  @import 'helpers/mixins';
+  @import 'helpers/resets';
+
+  // Import Layouts
+  @import 'layouts/header';
+  @import 'layouts/services';
+  @import 'layouts/menu';
+  @import 'layouts/promotions';
+  @import 'layouts/reservation';
+  @import 'layouts/subscribe';
+  @import 'layouts/footer';
+
+  // Responsive Design
+  @import 'layouts/mobile/header';
+  @import 'layouts/mobile/menu';
+  @import 'layouts/mobile/reservation';
+  @import 'layouts/mobile/subscribe';
+  @import 'layouts/mobile/footer';

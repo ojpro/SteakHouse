@@ -1,0 +1,29 @@
+// If you want it!,Don't Give-up
+@media(max-width:500px) {
+  .menu {
+    .items {
+      .plate {
+        flex: 1 46%;
+        grid-template-columns: auto;
+        .picture {
+          display: block;
+          margin: auto;
+          position: relative;
+          width: 98%;
+          img {
+            display: block;
+            margin: auto;
+            width: 100%;
+            height: auto;
+          }
+        }
+        .details {
+          padding: 8px;
+          .price {
+            position: static;
+          }
+        }
+      }
+    }
+  }
+}

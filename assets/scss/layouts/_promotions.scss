@@ -1,0 +1,51 @@
+// Planing without action is nothing
+.promotions{
+  padding: $responsive-padding;
+  margin-top: 36px;
+  .title{
+    color: $gray-300;
+  }
+  .desc{
+    color: $gray-600;
+    .subscribe_link{
+      color: $main-color;
+      text-decoration: underline;
+    }
+  }
+  .container{
+    @include space-around;
+    flex-wrap: wrap;
+    .promo{
+      @include relative;
+      @include border-radius-full(24px);
+      max-width: max-content;
+      overflow: hidden;
+      margin: 8px auto;
+      &::after{
+        @include absolute;
+        content: "";
+        left: 0;
+        bottom: 4px;
+        width: 100%;
+        height: 40%;
+        background-image: url('../images/pictures/dark_cover.png');
+        background-repeat: no-repeat;
+        z-index: 0;
+      }
+      .details{
+        @include absolute;
+        left: 8px;
+        bottom: 16px;
+        z-index: 1;
+        .title{
+          color: $white;
+        }
+        .view_details{
+          color:$white;
+          text-decoration: underline;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+// Dream Big & Work Bigger
+.services {
+  @include flex-center-horiz;
+  @include relative;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: -100px;
+  padding: $responsive-padding;
+  .service {
+    max-width: 320px;
+    background-color: $white;
+    padding: 24px;
+    margin: 8px auto;
+    @include box-shadow(2px, 8px, 16px, $transparent-black-5);
+    @include border-radius-full(8px);
+    .title {
+      color: $gray-300;
+    }
+    .desc {
+      color: $gray-600;
+    }
+    .access_link {
+      display: inline-block;
+      margin-top: 8px;
+      @include border(2px, solid, $transparent-black-10);
+      padding: 8px 12px;
+      @include border-radius-full(6px);
+      color: $gray-600;
+      &:hover{
+        background-color: $transparent-black-5;
+      }
+    }
+  }
+}

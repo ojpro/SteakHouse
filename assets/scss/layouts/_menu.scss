@@ -1,0 +1,86 @@
+// If you want it!,Don't Give-up
+.menu {
+  padding: $responsive-padding;
+  margin-top: 48px;
+  .title {
+    color: $gray-300;
+  }
+  .desc {
+    color: $gray-600;
+    .view_all {
+      color: $main-color;
+      text-decoration: underline;
+    }
+  }
+  .items {
+    display: flex;
+    flex-flow: row wrap;
+    .plate {
+      flex: 1 48%;
+      position: relative;
+      margin: 8px;
+      @include box-shadow(0,0,8px,$transparent-black-10);
+      @include border-radius-full(18px);
+      display: grid;
+      grid-template-columns: 210px auto;
+      grid-auto-rows: max-content;
+      column-gap: 8px;
+      .picture {
+        padding-top: 4px;
+        padding-left: 4px;
+      }
+
+      .offer {
+        @include border-right-radius(16px);
+        @include absolute;
+        left: 0;
+        top: 24px;
+        color: $white;
+        background-color: $main-color;
+        padding: 2px 8px;
+      }
+      .details {
+        padding: 4px;
+        @include relative;
+        .title {
+          h4 {
+            @include d-inline-block;
+            margin: 8px auto;
+            a {
+              color: $gray-300;
+            }
+          }
+          .plate_info {
+            img {
+              @include box(16px, 16px)
+            }
+          }
+        }
+        .desc {
+          margin: 8px auto;
+          color: $gray-600;
+        }
+        .price {
+          position: absolute;
+          bottom: 16px;
+          left: 16px;
+          .plate_price {
+            padding: 4px 10px;
+            @include border(1px, solid, $main-color);
+            @include border-radius-full(6px);
+            color: $main-color;
+            &:hover {
+              background-color: lighten($color: $main-color, $amount: .1);
+              color: $white;
+            }
+          }
+          .real_price {
+            text-decoration: line-through;
+            text-decoration-color: $gray-600;
+            color: $gray-600;
+          }
+        }
+      }
+    }
+  }
+}

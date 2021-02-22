@@ -1,0 +1,59 @@
+nav {
+  position: fixed;
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: $navbar-height;
+  padding: $responsive-padding;
+  z-index: 1;
+  line-height: $navbar-height / 1.5;
+  display: grid;
+  grid-template-columns: 48% 50%;
+  .brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: max-content;
+    padding: 4px 0;
+    a img {
+      margin-left: 16px;
+      @include box(70px, 35px);
+    }
+  }
+  .navbar_toggler{
+    position: absolute;
+    right: 16px;
+    top: 10px;
+    display: none;
+  }
+  .links {
+    ul {
+      @include flex-center-vert;
+      justify-content: space-between;
+      li {
+        line-height: $navbar-height - 8px;
+        &.active {
+          background-color: $main-color;
+          @include border-bottom-radius(8px);
+        }
+        &:last-of-type {
+          a {
+            @include border(1px, solid, $sections-bg);
+            @include border-radius-full(4px);
+            padding: 4px 10px;
+            &:hover {
+              background-color: $transparent-black-5;
+            }
+          }
+        }
+        a {
+          color: $white;
+          text-transform: uppercase;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}

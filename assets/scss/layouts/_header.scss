@@ -1,0 +1,47 @@
+// You Have Only One Life Please Enjoy it.
+header {
+  @include d-block;
+  @include border-bottom-radius(2vw);
+  @include relative;
+  background-color: $sections-bg;
+  height: 120vh;
+  // margin-top: -$navbar-height;
+  // Import Navbar
+  @import 'components/navbar';
+  .hero {
+    .container {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      width: 100%;
+      .heading {
+        padding: 8px 12px;
+        margin: auto;
+        h1 {
+          color: $gray-300;
+          .color_red {
+            color: $main-color;
+          }
+        }
+        .slogan {
+          color: $gray-600;
+        }
+        .go_to_menu {
+          margin: 16px 0;
+          display: inline-block;
+          padding: 12px 14px;
+          background-color: $main-color;
+          @include border-radius-full(8px);
+          @include box-shadow(0, 4px, 12px, $red-shadow);
+          a {
+            color: $white;
+            font-weight: bold;
+          }
+        }
+      }
+      .photo {
+        @include relative;
+      }
+    }
+  }
+}

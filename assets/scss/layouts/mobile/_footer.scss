@@ -1,0 +1,13 @@
+// Thanks Allah
+@media (max-width: 980px) {
+  footer {
+    .container {
+      .contact_info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+      }
+    }
+  }
+}

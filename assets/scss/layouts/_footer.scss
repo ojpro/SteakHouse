@@ -1,0 +1,29 @@
+// The only way to be relaxed is by complete you jobs
+footer {
+  background-color: $sections-bg;
+  padding-top: 16px;
+  .container {
+    padding: $responsive-padding;
+    .contact_info {
+      @include flex-center-vert;
+      flex-wrap: wrap;
+    }
+    hr {
+      color: $transparent-black-10;
+    }
+    .contact_info {
+      @include space-evenly;
+      padding: 8px;
+      h5 {
+        color: $gray-300;
+      }
+      a,
+      span {
+        color: $gray-600;
+      }
+      ul li {
+        display: inline-block;
+      }
+    }
+  }
+}

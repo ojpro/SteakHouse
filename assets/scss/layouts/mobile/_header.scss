@@ -1,0 +1,52 @@
+// You Have Only One Life Please Enjoy it
+// Responsive Header
+@media (max-width: 980px) {
+  header {
+    height: 100vh;
+    position: relative;
+    nav {
+      background-color: $gray-300;
+      display: grid;
+      grid-template-columns: none;
+      .navbar_toggler{
+        display: block;
+      }
+      .links {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: $navbar-height;
+        background-color: $gray-300;
+        padding: 4px;
+        ul {
+          display: flex;
+          flex-direction: row;
+          flex-basis: 1 100%;
+          text-align: center;
+          li {
+            width: 100%;
+            &:not(:last-of-type):hover {
+              background-color: $transparent-black-10;
+            }
+          }
+        }
+      }
+    }
+    .hero .container {
+      display: block;
+      margin: 20vh auto;
+      padding: 32px;
+      .photo {
+        display: none;
+      }
+    }
+  }
+}
+
+// Small Phones
+@media (max-width: 360px) {
+  header nav .links ul {
+    flex-direction: column;
+  }
+}

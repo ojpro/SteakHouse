@@ -1,0 +1,86 @@
+// Border Radius
+@mixin border-top-radius($size){
+  border-top-left-radius: $size;
+  border-top-right-radius: $size;
+}
+@mixin border-right-radius($size){
+  border-top-right-radius: $size;
+  border-bottom-right-radius: $size;
+}
+@mixin border-bottom-radius($size){
+  border-bottom-left-radius: $size;
+  border-bottom-right-radius: $size;
+}
+@mixin border-left-radius($size){
+  border-top-left-radius: $size;
+  border-bottom-left-radius: $size;
+}
+@mixin circle {
+  border-radius: 50%;
+}
+@mixin border-radius-full($size) {
+  @include border-top-radius($size);
+  @include border-right-radius($size);
+  @include border-bottom-radius($size);
+  @include border-left-radius($size);
+}
+// Boxes
+@mixin box($width,$height:$width,$display:inline-block) {
+  display: $display;
+  width: $width;
+  height: $height;
+}
+// FlexBox 
+@mixin d-flex {
+  display: flex;
+}
+@mixin flex-column {
+  @include d-flex;
+  flex-direction: column;
+}
+@mixin flex-row {
+  @include d-flex;
+  flex-direction: row;
+}
+@mixin flex-center-vert {
+  @include d-flex;
+  align-items: center;
+}
+@mixin flex-center-horiz {
+  @include d-flex;
+  justify-content: center;
+}
+@mixin space-around{
+  @include d-flex;
+  justify-content: space-around;
+}
+@mixin space-evenly{
+  @include d-flex;
+  justify-content: space-evenly;
+}
+@mixin space-between{
+  @include d-flex;
+  justify-content: space-between;
+}
+@mixin d-inline-flex {
+  display: inline-flex;
+}
+@mixin d-block {
+  display: block;
+}
+@mixin d-inline-block {
+  display: inline-block;
+}
+
+@mixin relative {
+  position: relative;
+}
+@mixin absolute {
+  position: absolute;
+}
+@mixin border($width,$style,$color) {
+  border: $width $style $color;
+}
+@mixin box-shadow($x,$y,$blur,$color) {
+  box-shadow: $x $y $blur $color;
+}

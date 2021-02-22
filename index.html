@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SteakHouse | By ojpro</title>
+  <!-- Import CSS Style FIle -->
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/app.min.css">
+</head>
+
+<body>
+  <main>
+    <header>
+      <!-- Navbar Menu -->
+      <nav>
+        <!-- Business Brand -->
+        <section class="brand">
+          <a href="#">
+            <img src="assets/images/brand/logo.png" class="logo" alt="SteakHouse">
+          </a>
+        </section>
+        <section class="navbar_toggler">
+          <a href="#" id="navbarToggler">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </a>
+        </section>
+        <!-- Nav Links -->
+        <section class="links">
+          <ul>
+            <li class="active">
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#menu">Menu</a>
+            </li>
+            <li>
+              <a href="#promotions">Promos</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <!-- Login Button -->
+              <div class="login_btn">
+                <a href="#">Login</a>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </nav>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <div class="heading">
+            <h1>
+              Discovery and <br>get the best steak<span class="color_red">.</span>
+            </h1>
+            <span class="slogan">Come to us. Delivery. Pick-up.</span>
+            <br>
+            <div class="go_to_menu">
+              <a href="#menu">
+                Go to Menu <span>&rightarrow;</span>
+              </a>
+            </div>
+          </div>
+          <!-- Hero Section Photo -->
+          <div class="photo">
+            <img src="assets/images/pictures/hero.png" alt="Steak">
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- Services Sections -->
+    <section class="services">
+      <div class="service">
+        <img src="assets/images/icons/star.png" alt="Organic Food">
+        <h3 class="title">Organic Food</h3>
+        <p class="desc">All food used with full invoice and clear origin.</p>
+        <a href="" class="access_link">Find Out More</a>
+      </div>
+      <div class="service">
+        <img src="assets/images/icons/chef.png" alt="Top Chefs">
+        <h3 class="title">Top Chefs</h3>
+        <p class="desc">Quality chefs from many countries around the world.</p>
+        <a href="" class="access_link" data-holder="Find Out More">Chef List <span>&rightarrow;</span></a>
+      </div>
+      <div class="service">
+        <img src="assets/images/icons/heart.png" alt="Nice Experience">
+        <h3 class="title">Nice Experience</h3>
+        <p class="desc">Experience the best space and service available today.</p>
+        <a href="" class="access_link" data-holder="Find Out More">Our Gallery <span>&rightarrow;</span></a>
+      </div>
+    </section>
+    <br>
+    <!-- Today Menu Section -->
+    <section class="menu" id="menu">
+      <h2 class="title">What's special today?</h2>
+      <p class="desc">
+        Special menus updated every day as well as seasonal.
+        <a href="#" class="view_all">View All Menu &gt;</a>
+      </p>
+      <section class="items">
+        <div class="plate">
+          <div class="picture">
+            <a href="#">
+              <img src="assets/images/pictures/american-steak.png" alt="American Steak 160gr">
+            </a>
+          </div>
+          <div class="offer"><span>-10%</span></div>
+          <div class="details">
+            <div class="title">
+              <h4><a href="#">American Steak 160gr</a></h4>
+              <a href="#" class="plate_info">
+                <img src="assets/images/icons/info.png" alt="Info">
+              </a>
+            </div>
+            <p class="desc">French-style steak is sautéed at the right temperature, the outside is quite good, but the inside is still red.</p>
+            <div class="price">
+              <a href="#" class="plate_price">USD 26.90</a>
+              <span class="real_price">USD 29.90</span>
+            </div>
+          </div>
+        </div>
+        <div class="plate">
+          <div class="picture">
+            <a href="#">
+              <img src="assets/images/pictures/beef-wellington.png" alt="Beef Wellington">
+            </a>
+          </div>
+          <div class="details">
+            <div class="title">
+              <h4><a href="#">Beef Wellington</a></h4>
+              <a href="#" class="plate_info">
+                <img src="assets/images/icons/info.png" alt="Info">
+              </a>
+            </div>
+            <p class="desc">Beef Wellington is an English pie made of fillet steak coated with pâté (often pâté de foie gras) and duxelles.</p>
+            <div class="price">
+              <a href="#" class="plate_price">USD 28.90</a>
+            </div>
+          </div>
+        </div>
+        <div class="plate">
+          <div class="picture">
+            <a href="#">
+              <img src="assets/images/pictures/beff-short-rib.png" alt="Beff Short Rib">
+            </a>
+          </div>
+          <div class="details">
+            <div class="title">
+              <h4><a href="#">Beff Short Rib</a></h4>
+              <a href="#" class="plate_info">
+                <img src="assets/images/icons/info.png" alt="Info">
+              </a>
+            </div>
+            <p class="desc">Red wine braised short rib, potato purée, wild mushrooms. Cooked long and slow in a rich red wine sauce.</p>
+            <div class="price">
+              <a href="#" class="plate_price">USD 22.90</a>
+            </div>
+          </div>
+        </div>
+        <div class="plate">
+          <div class="picture">
+            <a href="#">
+              <img src="assets/images/pictures/grilled-lamb-rib-chops.png" alt="Grilled Lamb Rib Chops">
+            </a>
+          </div>
+          <div class="details">
+            <div class="title">
+              <h4><a href="#">Grilled Lamb Rib Chops</a></h4>
+              <a href="#" class="plate_info">
+                <img src="assets/images/icons/info.png" alt="Info">
+              </a>
+            </div>
+            <p class="desc">Grilling lamb chops is no harder than grilling a burger or a steak. A few tricks that will give you stellar results.</p>
+            <div class="price">
+              <a href="#" class="plate_price">USD 22.90</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- Promotions Menu -->
+    <section class="promotions" id="promotions">
+      <h2 class="title">Exclusive Promotions</h2>
+      <div class="desc">
+        <p>Stay update with our promotions to get the best experinece. <a href="#subscribe" class="subscribe_link">Subscribe Now!</a>
+        </p>
+      </div>
+      <div class="container">
+        <div class="promo">
+          <img src="assets/images/pictures/promo_1.png" alt="Promotion 1">
+          <div class="details">
+            <a href="#">
+              <h4 class="title">Discount Up To 20% For Pre-Booked Table At Christmas Day
+              </h4>
+              <span class="view_details">View Details &gt;&gt;</span></a>
+          </div>
+        </div>
+        <div class="promo">
+          <img src="assets/images/pictures/promo_2.png" alt="Promotion 2">
+          <div class="details">
+            <a href="#">
+              <h4 class="title">Free 1 Bottle Of Wine In List For An Over-USD-300 Bill
+              </h4>
+              <span class="view_details">View Details &gt;&gt;</span></a>
+          </div>
+        </div>
+        <div class="promo">
+          <img src="assets/images/pictures/promo_3.png" alt="Promotion 3">
+          <div class="details">
+            <a href="#">
+              <h4 class="title">Receive A Random Christmas Gift For All Children Come To Steak House
+              </h4>
+              <span class="view_details">View Details &gt;&gt;</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Reservation -->
+    <section class="reservation">
+      <h2 class="title">Reservation</h2>
+      <div class="desc">
+        <p>Book a table in advance to enjoy the full experience at Steak House!</p>
+      </div>
+      <div class="container">
+        <div class="booking_form">
+          <form action="#">
+            <div class="customer_name">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="Keris Ph. Pham" required>
+            </div>
+            <div class="customer_phone">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="+84 123 465 879" required>
+            </div>
+            <div class="select_date">
+              <label for="date">Select Date</label>
+              <input type="date" id="date" placeholder="5 Dec 2020" required>
+            </div>
+            <div class="select_time">
+              <label for="time">Select Time</label>
+              <input type="time" id="time" placeholder="8:30 PM" required>
+            </div>
+            <br>
+            <div class="customer_notes">
+              <label for="notes">Notes</label>
+              <textarea name="" id="notes" placeholder="Leave Your Notes(optional)"></textarea>
+            </div>
+            <br>
+            <div class="submit">
+              <div>
+                <p class="note">We will contact you via phone number to confirm your reservation.</p>
+              </div>
+              <div>
+                <button type="submit" class="submit_btn">Submit</button>
+              </div>
+
+            </div>
+          </form>
+        </div>
+        <div class="cover">
+          <img src="assets/images/pictures/reservation.png" alt="Reservation">
+          <div class="details">
+            <img src="assets/images/brand/logo.png" alt="">
+            <h3>Discovery and get the best steak.</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Subscribe Section -->
+    <section class="subscribe">
+      <div class="container">
+        <h2 class="title">Subscribe</h2>
+        <p class="desc">Subscribe to get our latest promotions</p>
+        <form action="#" class="subscribe_field">
+          <input type="email" name="" id="subscribe" placeholder="Your Email Address" required>
+          <button type="submit" class="subscribe_btn">
+          <img src="assets/images/icons/arrow-right.png" alt="Subscribe Now">
+        </button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <hr>
+        <section class="contact_info">
+          <div class="logo">
+            <a href="#">
+              <img src="assets/images/brand/logo.png" alt="">
+            </a>
+          </div>
+          <div class="address">
+            <h5>Address:</h5>
+            <span>4915 Pretty View Lane, Santa Rosa, California 95401</span>
+          </div>
+          <div class="tel">
+            <h5>Tel:</h5>
+            <a href="tel:714-350-2671">714-350-2671</a>
+          </div>
+          <div class="email">
+            <h5>Email:</h5>
+            <a href="mailto:contact@steakhouse.com">contact@steakhouse.com</a>
+          </div>
+          <div class="Social Media">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="assets/images/icons/instagram.png" alt="Instagram">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/images/icons/youtube.png" alt="Youtube">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </main>
+  <!-- Include JavaScript Files -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
